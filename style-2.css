@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(imagenes/imagen.gif);
+  padding: 0;
+  margin: 0;
+}
+
+canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111a22;
+}
+
+nav {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 52px;
+  background-color: rgb(211, 87, 39);
+  overflow: hidden;
+
+  transition: width 0.3s;
+}
+nav:hover {
+  width: 400px;
+}
+
+nav .bar {
+  background-color: rgb(194, 105, 32);
+  color: rgb(177, 246, 255);
+  display: flex;
+  justify-content: end;
+  
+}
+
+nav .user {
+  color: rgb(160, 189, 241);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  height: 180px;
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  text-shadow:1px 1px 15px rgb(70, 24, 2);
+}
+nav:hover .user {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+nav .user img {
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 10px 5px 5px rgb(167, 65, 14);
+
+}
+
+nav .links {
+}
+
+nav .links a {
+  color: rgb(233, 238, 255);
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 400px;
+  overflow: hidden;
+}
+nav .links a:hover {
+  background-color: rgb(31, 135, 205);
+  color: white;
+}
+
+nav .links a .icon {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
